@@ -8,72 +8,39 @@ During this project, we have come to analyze data on previous Kickstarter campai
 
 ### Analysis 
 
-To analyze the outcome data and its relationship to the launch date I created the following pivot table in the Theater Outcomes by Launch Date.
+Using the data provided in the table, we were able to create this pivot table demonstrating Theater Outcome by the Launch Date.
+![Pivot_Table](/Resources/Pivot_Table.png)
 
-![Pivot_Table](/resources/Pivot_Table.png)
+We used a filter to analyze data specific to what was asked. Filters like being able to find out the specific category really helped narrow down the data. 
 
-The table is filtered by the Parent Category “theater.” Because the focus of this project was plays, a subcategory of theater, the filter was a applied to show the data relevant to the clients request. The data in this pivot table is visualized in the Theater Outcome Based on Launch Date graph included in the Results potion of this document. 
-
-To analyze the outcome data and its relationship to fundraising goal I created the following table in the Outcome Based on Goals sheet. 
-
-![goal_outcome_data](/resources/goal_outcome_data.png)
-
-To create the “Number Success”, “Number Failed”, “Number Canceled” columns I used a variation of the following formula. 
-
-![countifs_formula](/resources/countifs_formula.png)
-
-The COUNTIF()  function counts all data that meets the following criteria 
-*>= the lowest goal amount of the given range in the goal column 
-*<= the highest goal amount of the given range in the goal column
-*has the subcategory column of “plays” from the Kickstarter Data dataset
-*has the appropriate value of “Successful”, “Failed”, or “Canceled” from the Outcomes column of the Kickstarter dataset
-
-Additionally, I utilized absolute cell references so that the formula could easily be applied to other cells with minimal adjustments. 
-
-To create the Total projects column, I used the following formula.
-
-![sum_formula](/resources/sum_formula.png)
-
-To create the percentage columns, I used the following formula
-
-![percentage_formula](/resources/percentage_formula.png)
-
-Because the formula includes division, I wrapped the formula in the IFERROR function. If the denominator were ever 0, a “0%” would display in the cell instead of a error message. 
-
-The data in this table is visualized in Outcome based on Goals graph included in the Results potion of this document.
+By using variations of the COUNTIF Formula and applying absolute cell references, we were able to count all data that met specific criteria accurately
 
 ### Challenges
 
-When populating the Outcome Based on Goals sheet, I found the process of entering formulas into the “Number Success”, “Number Failed”, “Number Canceled” cells very time consuming. To combat this, I utilized absolute cell references so that the formal could be easy copied down rows and across columns. 
-
-Because the formula used for the “Number Success”, “Number Failed”, “Number Canceled” cells is has several permeates, I did receive errors. Resolving this error requires attention to detail to ensure each comma, apostrophe, and quotation mark was appropriately placed. 
+Some formulas we're quite time consuming which proved absolute cell references very usefull throughout the entire analysis of the structured Data.
  
 ## Results
 
 ### Theater Outcomes Based on Launch Dates
-![Theater_outcomes_vs_Launch](/resources/Theater_outcomes_vs_Launch.png)
+![Theater_outcomes_vs_Launch](/Resources/Theater_Outcomes_vs_Launch.png)
 
-### Theater Outcomes Based on Launch Dates: Conclusion 1
-#### Theater Kickstarter Campaigns launched in May, June, and July are the most successful
-The graph shows these months have higher success rates than other months. The Failed rate increase slightly for these months indicating that there are more campaigned launched these months. However, the increase in success is disproportionally higher. 
+### What are two conclusions you can draw about the Outcomes based on Launch Date?
+#### Most Successful month for campaigns were in May, June and July
+There are more campaigns launched in those three months indicating the increase number of overall failures.
 
 ### Theater Outcomes Based on Launch Dates: Conclusion 2
-#### The worst month to launch a Theater Kickstarter Campaigns is December
-The shows December having the least amount of successful Theater Campaign launches. Additionally, the number of failed campaigns is very close the number of successful ones.  
+#### The least successful month to launch campaigns seems to have been in December
+Had almost the same number of failed vs successful campaigns
 
 ### Theater Outcomes Based on Launch Dates
-![outcome_vs_goals](/resources/Outcome_vs_Goals.png)
+![outcome_vs_goals](/Resources/Outcomes_vs_Goals.png)
 
 ### Outcome Based on Goals: Conclusion 
-#### Theater Kickstarter Campaigns with a fundraising goal between $5,000 and $9,999 are the most successful. 
-According to the Outcome Based on Goals graph, campaigns with goals between $5,000 and $9,999 have the highest success rate at 100% successful. 
+#### Campaigns with a fundraising goal between $5,000 and $9,999  had the highest rate of success. 
 
 ### Summary of Limitations and Recommendations 
 
-#### limitations
-One limitation of that data is that there is no recent data. That most recent data point comes from 2017. 
-
-##### Recomendatiosn 
-In addition to the graphs included in this report, I recommend creating a table to analyze the relationship between pledges received and number of backers. 
-
-I would also recommend creating a table to analyze the relationship between the number of backers and success rate. 
+#### limitations of this Data set
+Data seems cluttered and some could have been omitted to make the process more streamlined. Some data seems also outdated.
+##### Other Possible Tables 
+You could create a table that analyzes relationships between backers and the amount of money raised. Some campaigns with less backers than others ended up being a success.
