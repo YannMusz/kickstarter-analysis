@@ -28,14 +28,14 @@ Some formulas we're quite time consuming which proved absolute cell references v
 #### Most Successful month for campaigns were in May, June and July
 There are more campaigns launched in those three months indicating the increase number of overall failures.
 
-### Theater Outcomes Based on Launch Dates: Conclusion 2
+### Theater Outcomes Based on Launch Dates
 #### The least successful month to launch campaigns seems to have been in December
 Had almost the same number of failed vs successful campaigns
 
 ### Theater Outcomes Based on Launch Dates
 ![outcome_vs_goals](/Resources/Outcomes_vs_Goals.png)
 
-### Outcome Based on Goals: Conclusion 
+### Outcome Based on Goals
 #### Campaigns with a fundraising goal between $5,000 and $9,999  had the highest rate of success. 
 
 ### Summary of Limitations and Recommendations 
